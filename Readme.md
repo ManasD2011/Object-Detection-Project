@@ -1,10 +1,10 @@
-# 🚀 Real-Time Object Detection & Tracking System
+#  Real-Time Object Detection & Tracking System
 
 A full-stack AI-powered system for **real-time object detection, tracking, and movement analysis** using YOLOv8, FastAPI, and Next.js.
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This project is a **AI system** that processes live video streams, detects objects, tracks them across frames, and provides real-time analytics via a modern web dashboard.
 
@@ -12,19 +12,19 @@ It demonstrates **end-to-end system design**, combining Machine Learning, Backen
 
 ---
 
-## 🎯 Key Features
+##  Key Features
 
-* 🎥 **Live Video Streaming** (MJPEG stream)
-* 🧠 **Real-Time Object Detection** using YOLOv8
-* 🧾 **Object Tracking with Unique IDs**
-* 🔢 **Object Counting**
-* 🔄 **Entry / Exit Movement Detection**
-* 📊 **Live Dashboard (Next.js)**
-* ⚡ **FastAPI Backend with Modular Architecture**
+* **Live Video Streaming** (MJPEG stream)
+* **Real-Time Object Detection** using YOLOv8
+* **Object Tracking with Unique IDs**
+* **Object Counting**
+* **Entry / Exit Movement Detection**
+* **Live Dashboard (Next.js)**
+* **FastAPI Backend with Modular Architecture**
 
 ---
 
-## 🏗️ Tech Stack
+##  Tech Stack
 
 ### Backend
 
@@ -44,7 +44,7 @@ It demonstrates **end-to-end system design**, combining Machine Learning, Backen
 
 ---
 
-## 🧱 Project Structure
+##  Project Structure
 
 ```
 object-detection-system/
@@ -56,9 +56,9 @@ object-detection-system/
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
-### 🔹 1. Clone the Repository
+###  1. Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/object-detection-system.git
@@ -67,7 +67,7 @@ cd object-detection-system
 
 ---
 
-### 🔹 2. Backend Setup
+###  2. Backend Setup
 
 ```bash
 cd backend
@@ -80,12 +80,12 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
-👉 Backend runs at:
+Backend runs at:
 `http://localhost:8000`
 
 ---
 
-### 🔹 3. Frontend Setup
+###  3. Frontend Setup
 
 ```bash
 cd frontend
@@ -94,14 +94,14 @@ npm install
 npm run dev
 ```
 
-👉 Frontend runs at:
+ Frontend runs at:
 `http://localhost:3000`
 
 ---
 
-## 🌐 API Endpoints
+##  API Endpoints
 
-### 📌 Get Detections
+###  Get Detections
 
 ```
 GET /api/detections
@@ -118,7 +118,7 @@ GET /api/detections
 
 ---
 
-### 📌 Live Stream
+###  Live Stream
 
 ```
 GET /api/stream
@@ -126,7 +126,7 @@ GET /api/stream
 
 ---
 
-## 🧠 ML Pipeline
+##  ML Pipeline
 
 1. Frame Capture (OpenCV)
 2. Preprocessing (Resize)
@@ -137,7 +137,7 @@ GET /api/stream
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 * Model trained on COCO dataset (limited classes)
 * May misclassify uncommon objects (e.g., perfume bottles)
@@ -145,7 +145,7 @@ GET /api/stream
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 * Custom-trained model (domain-specific detection)
 * WebSocket-based real-time updates
