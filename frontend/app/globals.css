@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── CSS Custom Properties (dark dashboard theme) ─────────── */
+:root {
+  --color-base:           #020c1b;
+  --color-surface:        #0d1526;
+  --color-card:           #111f35;
+  --color-elevated:       #192840;
+  --color-border:         rgba(148,163,184,0.12);
+  --color-border-subtle:  rgba(148,163,184,0.07);
+
+  --color-fg:             #f1f5f9;
+  --color-muted:          #64748b;
+  --color-dim:            #3f526b;
+
+  --color-brand:          #3b82f6;
+  --color-brand-s:        rgba(59,130,246,0.12);
+
+  --color-success:        #34d399;
+  --color-danger:         #f87171;
+  --color-amber:          #fbbf24;
+  --color-violet:         #a78bfa;
+  --color-cyan:           #22d3ee;
+}
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html, body {
+    background-color: var(--color-base);
+    color: var(--color-fg);
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar               { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track         { background: transparent; }
+  ::-webkit-scrollbar-thumb         { background: #1e2d42; border-radius: 999px; }
+  ::-webkit-scrollbar-thumb:hover   { background: #2a3f5a; }
+}
